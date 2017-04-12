@@ -5,13 +5,13 @@ HOST: http://polls.apiblueprint.org/
 
 User Service is an API for user management.
 
-## User collection [/users]
+## User collection [/users?limit={limit}&offset={offset}]
 
 ### List All Users within the organization [GET]
 
 + Parameters
-    + limit (number) - the page size limit (20 is a max value);
-    + offset (number) - the page offset;
+    + limit (number, optional) - the page size limit (20 is a max value);
+    + offset (number, optional) - the page offset;
 
 + Response 200 (application/json)
 
